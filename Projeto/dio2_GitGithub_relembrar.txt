@@ -1,0 +1,102 @@
+passo 2 GitGithub_relembrar
+
+
+
+
+mao da massa
+
+
+criar um repositorio novo no Github
+e interaçoes com o repositorio 
+   - criar, modificar, atualizar 
+       - no local (pc) ou na Github
+       
+COMEÇAR
+
+- entra na interface do Github
+
+- clicar no "+" e em novo repositorio
+
+- "repository name" :dar um nome que tem haver 
+  "Description" :falar sobre o repositorio 
+  "publico" ou "privado": melhor publico para outras empresas e pessoas verem. Mas voce escolhe
+    "add a README file" colocsr um README( é como se fosse a "pagina principal" )
+    "add .gitgnore": uma tecnologia que ignora uns arquivos para não atrapalhar
+    "chose a license" um conjunto de licensas
+    
+    "chose a license" e "add .gitgnore"
+ pesquise mais sobre
+     
+    - e apreta "create repository"
+    
+    
+PRONTO
+
+já pode pegar seu repositorio e clonar na sua maquina pelo SSH, HTTPS ou GitHub CLI
+      
+         
+da pra usar a propria interface do GitHub para editar o seu repositorio.
+ \- para apertar em "commit change para salvar sua modificação no proprio GitHub"
+
+
+
+
+fazer o download do repositorio na maquina
+
+pelo HTTPS 
+ - Copiar o link
+
+ -  dar um "git clone" link copiado
+
+no WINDONS
+vai abrir om browser e vc vai precisar logar
+
+no LINUX e MAC
+so colocar seus  usuario e senha
+
+git status
+pra ver se estar tudo certo
+
+
+
+
+como colocar sua edição no GitHub
+
+git status
+
+git add
+para adicionar todas as ediçoes que voce fez no repositorio
+
+git commit -m "nome sobre oq editou"
+
+git status
+
+git push nome_da_branch
+"git push origin main"
+enta enviando tudo pra nuvem(GitHub)
+
+
+
+
+isso é para poder organizar seus estudo e progetos pelo Git & GitHub
+
+
+
+   
+    
+    
+    
+
+ 
+  
+
+
+
+
+
+
+
+
+
+
+re

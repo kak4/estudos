@@ -1,0 +1,125 @@
+PRIMEIROS COMANDOS COM O GIT
+
+O que faremos com esses comandos
+
+- iniciar o Git                     git init
+- iniciar o versionamento           git add
+- criar um commit                   git commit
+
+quando usamos o terminal a gente coloca o nome do 
+programa na frente
+ex
+git install 
+ 
+
+
+
+Criando um Repositorio
+
+criar uma pasta no repositorio C 
+name : WorkSpace
+ 
+butão direito e git bash here 
+
+ls
+
+
+
+
+criou uma pasta dentro do Workspace
+mkdir livro-receitas
+
+ls
+>>>livro-receitas/cd
+ cd livro-receitas
+
+
+
+
+inicializar o git dentro da pasta 
+ \> git vai gerenciar a pasta 
+git init
+
+git falou que esta vazia porem foi criado uma pasta
+(.git) <- é uma pasta oculta <TEM PONTO NA FRENTE>
+    \> pasta gerencial do git
+
+para ver essa pasta precisa modificar o comando
+ls -a 
+>>>./ ../  .git/ 
+
+
+entra nessa pasta e ver arquivos
+cd .git
+ls
+>>>    hooks/   info/   objects/   refdirs/
+uma estrutura do git 
+
+volta e limpa terminal
+cd .. 
+.......
+
+
+
+
+Criar o Primeiro Arquivo
+vai pedir um nickname e gmail
+
+gmail -> git config --global user.email 'seu_email'
+nome -> git config --global user.name 'seu_nome'
+
+git config --list
+user.email=seu_email_digitado
+user.name=seu_nome_digitado
+
+
+
+criar um arquivo com extenção markdown
+ 
+html -  "estrutura basica da web"
+markdown - uma maneira mais facil de html
+
+
+mudar texto para que fique mais bonito
+Markdown                              
+# Titulo grande nivel 1             
+## pouco menor nivel 2
+### um pouco menos n3
+#### mais pequeno n4
+##### bem menos n5
+###### muito menor n6
+
+
+HTML
+<h1>Titulo grande nivel 1</h1>
+<h2>pouco menor nivel 2</h2>
+<h3>um pouco menos n3</h3>
+<h4>mais pequeno n4</h4>
+<h5>bem menos n5</h5>
+<h6>muito menor n6</h6>
+
+hhmm qual é o MAIS SIMPLES ....
+MARKDOWN  ->   .md
+
+
+
+git add * 
+>>>
+
+
+
+git commit -m
+>>>[master (root-commit) 'numbers'] commit inicial
+>>> 1 file changed, 1 insertion(+)
+>>>create mode 100644 aula40.md
+
+numbers - são os primeiros caracteres do SHA1
+quando se cria um arquivo qualquer se cria um SHA1
+especifico 
+
+
+
+
+
+
+

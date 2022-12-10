@@ -1,0 +1,274 @@
+git init 
+alem de criar aquela pasta '.git' ela tambem inicializa o
+conseito de repositorio 
+entt
+se CRIA  um REPOSITORIO  no GIT 
+
+
+                          /                        Tracked                                          \
+  Untracked  |     unmodified      |       modified     |    staged     |
+                      |                               |                            |                    |
+adicionar      |                               |                            |                    |
+arquivo         |                               |                            |                    |
+---->----->-------->------->------->------>----->--->---->-|                    |
+                       |                               |                           |                    |
+                       |                               |         editar        |                    |    
+                       |                               |        arquivo      |                    |
+                       |                               |  -->---->--->->->|                     |
+                       |                               |                           |                     |
+                       |                               |                            |"stage"        |
+                       |                               |                            | arquivo      |
+                       |                               |                            |->-->-->-->->|
+remover        |                                |                            |                    | 
+arquivo         |                                |                            |                    |
+<-<-<--<-<--<-|                                |                           |                     |
+                       |                                |                           |     commit  |
+                       |<--<--<--<--<-<--<--<--<--<--<--<--<--<--<--<-<-<-<-<|
+
+Untracked = arquivos que o git não temos ciencia
+tracked = arquivos que temos ciencia deles
+(detectaveis) criou um arquivo
+
+modfied = já mudou alguma coisa 
+unmodfied = ainda que não foi modificado
+como ele muda?... ele vai comparar os SHA1
+
+staged = arquivos estão preparando para "entra no palco"
+esses vão participar de outro tipo de agrupamento
+...ele esta se preparando para ser um COMMIT 
+
+-> quando vira commit ele....
+ pega todos os arquivos e 
+cria um snap shot"foto" (salvou Tudo que vc tem no 
+objeto commit)
+e assim retorna para UNMODFIED 
+volta com todas as alteraçoes que vc fez antes
+
+
+REPOSITORIOS 
+                                                                     Servidor 
+                                                                       _____________
+                                                                      |      REMOTE   |
+                                                                      | REPOSITORY |
+ Ambiente de Desenvolvimento
+ ____________            _____________         _____________    
+|WORKING    |          |     STAGING    |      |        LOCAL     |
+|DIRECTORY  |          |         AREA      |      |REPOSITORY  |
+  
+ 
+o ambiente de desenvolvimento 
+                   =
+TUDO QUE ESTA NA NOSSA MAQUINA 
+repositorio local
+
+    Servidor 
+          =
+proprio do Git 
+
+
+oque voce faz na sua maquina NÃO MUDA o que esta 
+no servido(repositorio proprio do Git)
+só com uns comandos especificos 
+depois aprender ...
+
+           Servidor 
+                                                                       _____________
+                                                                      |      REMOTE   |
+                                                                      | REPOSITORY |
+ Ambiente de Desenvolvimento
+ ____________            _____________              _____________    
+|WORKING    |          |     STAGING    |             |        LOCAL     |
+|DIRECTORY  |          |         AREA      |             |REPOSITORY  |
+
+                          /                        Tracked                                          \  
+Untracked  |     unmodified      |       modified    |    staged     | 
+                    |                               |                           |                    |
+adicionar    |                               |                           |                    |
+arquivo       |                               |                           |                    |
+---->----->-- ---->------->------->------>----->--->--->-|                    |
+                    |                               |                           |                    |
+                    |                               |         editar       |                    |    
+                    |                               |        arquivo    |                    |
+                    |                               | ->->->>->->->|                    |
+                    |                               |                           |                    |
+                    |                               |                           |"stage"        |
+                    |                               |                           | arquivo      |
+                    |                               |                           |->-->-->-->->|
+remover   |                               |                           |                    | 
+arquivo     |                               |                           |                    |
+<-<-<-<-<-<-|                               |                           |                     |
+                    |                               |                           |     commit  |
+                    |<--<--<--<--<-<--<--<--<--<--<--<--<--<--<--<-<-<-<-<|
+
+
+
+quando adiciona o arquivo que era um Untracked(git não 
+tinha ciencia desse arquivo) e dar um GIT ADD é movido 
+para a Straging Area 
+
+
+
+quando tem um arquivo já modificado e dar um GIT ADD 
+e movido novamente para a Straging Area
+
+
+
+quando voce faz os arquivos entrarem "em cena" Staged voce 
+faz um Commit( snap shot ) então passa de Staging Area para 
+Local Repository(para o seu pc) e podendo modificar o Commit 
+novamente e voltar o ciclo
+
+
+
+
+
+
+vamos para o terminal
+
+git status - ajuda a monitorar o status dos arquivos
+dizer se estar untracked, modifiel unmodfiel
+
+
+
+git status
+>>>On branch master
+>>>nothing to commit, working tree clean
+
+* na branch master - depois vamos enteder isso 
+* nada para comitar
+* arvore de trabalho estar limpa (não tem auteração)
+
+
+
+movemos um arquivo para uma outra pasta
+demos git status denovo 
+
+
+>>> On branch master
+>>>Changes not staged for commit:
+>>>  (use "git add/rm <file>..." to update what will be committed)
+>>>  (use "git restore <file>..." to discard changes in working directory)
+>>>        deleted:    aula40.md
+
+>>>Untracked files:
+>>>  (use "git add <file>..." to include in what will be committed)
+>>>        aula50/
+
+>>>no changes added to commit (use "git add" and/or "git commit -a")
+
+
+trouxe mais informações 
+....
+deu delete pois a pasta que foi movida o git ainda não
+o reconhece (untracked files)
+use "git add <file>..." - para o git começar a reconhecer
+
+
+
+
+Vamos fazer o que o git sugeriu 
+
+
+git add aula40.md aula50/   -como o git achou que 
+deletei o arquivo, tive que colocar a pasta e o arquivo
+
+  git status
+
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    aula40.md -> aula50/aula40.md
+
+Changes to be committed  
+
+
+*mudanças para serem comitadas
+ou seja....
+mudaram seu estagio para staged
+
+git restore --staged <file>  -tirar do staged 
+sair do "palco" 
+
+
+
+mas...
+vamos seguir o processo
+
+
+git commit -m "cria pasta aula50, move arquivo aula40.md para aula50"
+criei um commit / passando uma mensagem pra commit
+
+>>>[master b56db07] cria pasta aula50, move arquivo aula40.md para aula50
+>>> 1 file changed, 0 insertions(+), 0 deletions(-)
+>>> rename aula40.md => aula50/aula40.md (100%)
+
+virou commit
+
+git status
+>>>On branch master
+>>>nothing to commit, working tree clean
+VOLTOU TUDO DENOVO
+como falamos antes
+
+
+
+fazer mais um arquivo que vai servir de Index
+arquivo que as pessoas vao ver
+
+echo > README.md   -cria o arquivo
+
+
+git status
+>>>On branch master
+>>>Untracked files:
+>>>  (use "git add <file>..." to include in what will be committed)
+ >>>       README.md
+
+
+
+esse novo arquivo não é conhecido pelo git
+não esta no commit
+
+
+git add *   -com "*" ele pega tudo que esta no diretorio
+e adiciona no staged
+
+>>>On branch master
+>>>Changes to be committed:
+>>>  (use "git restore --staged <file>..." to unstage)
+>>>        new file:   README.md
+
+
+
+agora adiciona novamente no comit
+
+
+git commit -m "adiciona index"
+>>>[master 2e02910] adiciona index
+>>> 1 file changed, 1 insertion(+)
+>>> create mode 100644 README.md
+
+fizemos a "capa " (README.md)
+
+
+                                                                                |      REMOTE   |
+                                                                                | REPOSITORY |
+ Ambiente de Desenvolvimento
+ ____________            _____________              _____________    
+|WORKING    |          |     STAGING    |             |        LOCAL     |
+|DIRECTORY  |          |         AREA        |            |REPOSITORY  |
+
+                         > git add                     > git commit -m 
+
+
+
+PROXIMA AULA 
+                                                                                |      REMOTE   |
+                                                                                | REPOSITORY |
+relação entre esses dois 
+                                                                                 ____________
+                                                                                |        LOCAL     |
+                                                                                |REPOSITORY |
+
+                                                                                
+                                                                                

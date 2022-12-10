@@ -1,0 +1,39 @@
+ ENTENDER COMO O GIT FUNCIONA POR BAIXO 
+DOS PANOS
+
+-SHA1 
+-Objetos fundamentais
+-Sistema distribuido
+-segurança
+
+
+a sila SHA significa Segure Hash Algorithm (Algoritimo 
+de Hash Seguro), é um conjunto de funções hash 
+criptográfadas projetadas pela NSA (Agencia de 
+Segurença Nacional dos EUA).
+
+É UM ALGORITIMO QUE VAI ENCRIPTAR 
+   \> embaralha de uma forma especifica
+
+a encriptação gera conjunto de characteres 
+identificador de 40 dígitos
+
+ex : 
+-se vc tem um arquivo de texto e roda o algoritmo
+vai gerar um conjunto de 40 characteres 
+- se eu volta no arquivo coloca uma virgula e rodar o 
+algoritmo ja é outra chave
+
+essa chave é uma forma CURTA DE REPRESENTAR 
+UM ARQUIVO
+
+
+arquivo microfone.txt
+SHA1(microfone.txt)= 41411cec4eacf950f876f61a0fd894360b9a1df7
+ 
+coloquei uma letra e gerou outra chave no arquivo
+SHA1(microfone.txt)= ebb15f77579a783877b0b9dca6a13fb3896aaaf5
+
+e quando eu apago oq eu mudei volta para a mesma 
+senha
+SHA1(microfone.txt)= 41411cec4eacf950f876f61a0fd894360b9a1df7

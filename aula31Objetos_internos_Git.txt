@@ -1,0 +1,15 @@
+
+OBJETOS INTERNOS DO GIT
+
+3 tipos basicos
+  - Blobs
+  - Trees
+  - Commits
+
+o BASICO...
+
+
+Commits
+
+
+ex pratico

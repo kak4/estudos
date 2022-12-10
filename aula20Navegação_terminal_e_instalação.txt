@@ -1,0 +1,154 @@
+NAVEGAÇAO BASICA NO TERMINAL E INSTALAÇAO
+
+GUI X CLI
+
+Git é pelo CLI
+ nao tem interface grafica
+   \> sem o deslise, função
+
+entt é so pelo terminal
+  PRECISA SABER UNS CODIGOS
+
+
+
+OQUE VAMOS APRENDER
+
+- mudar de pastas
+- lista as pastas
+- criar pastas/arquivos
+- deletar pastas/arquivos
+
+
+
+WINDOWs       UNIX
+-cd           -cd
+-dir          -ls
+-mkdir        -mkdir
+-del/rmdir    -rm -rf
+
+shell           bash
+
+comandos basicos
+
+
+
+WINDOWS cmd
+
+• dir -lista de diretorio/pastas
+
+
+• cd - navegar na pasta(ir para uma ou outra
+pasta) uso do barra /
+
+EX :cd storage/donwloads/....
+
+
+e se quisermos voltar para a pasta anterior
+cd ..
+
+
+comando para limpa a tela
+cls
+
+
+função de alto completar
+TAB
+
+EX :cd W aperta TAB (se tiver uma pasta do
+windows ja vai entra automatico sem escrever
+tudo)
+
+
+• mkdir - criar pastas
+  EX : mkdir nomeDaPasta
+
+
+• echo - devolve no terminal oque vc digitou
+EX echo hello
+   hello
+
+   echo hello > hello.txt - cria um arquivo
+hello.txt nome do arquivo
+
+
+• del - deletar arquivos
+EX : del nomedoarquivo
+
+• rmdir - deletar pastas
+EX : rmdir Nome TAB
+
+
+
+UNIX - terminal
+
+
+• ls -lista de diretorio/pastas
+
+ 
+• cd - navegar na pasta(ir para uma ou outra 
+pasta) uso do barra /
+
+EX :cd storage/donwloads/....
+
+
+=> e se quisermos voltar para a pasta anterior
+cd ..
+
+
+=>comando para limpa a tela
+   clear ou CTRL + L 
+
+
+=>  função de alto completar
+   TAB
+ 
+
+• mkdir - criar pastas
+  EX : mkdir nomeDaPasta
+
+
+• echo - devolve no terminal oque vc digitou
+EX echo hello
+   hello
+
+   echo hello > hello.txt - cria um arquivo
+hello.txt nome do arquivo
+ouu
+...
+• nano hello.txt - cria um arquivo
+
+
+• rm -rf - deletar pasta
+EX :rm -rf Nome TAB -PARA COMPLETAR
+
+
+flags : sao as varianças dos codigos 
+Ex ls - lash
+
+
+
+
+
+
+
+INSTALACAO
+
+
+Windows
+
+pesquisa por git bash no navegador
+
+ou
+
+coloque isso no pronpt de comando
+winget install --id Git.Git -e --source winget
+
+
+Unix
+
+só pesquisar por git bash no navegador e 
+escolher por Linux 
+
+vai aparecer os codigos para cada Linux
+
+sempre usar -sudo-  +

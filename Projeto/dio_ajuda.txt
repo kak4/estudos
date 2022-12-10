@@ -1,0 +1,21 @@
+
+
+
+primeira duvida do git
+
+
+
+
+Opa, boa noite. Bom, creio que o seu problema talvez seja não ter a pasta em seu computador.
+
+Se você possui as pastas no seu computador, não se esqueça de:
+
+    Adicionar as alterações (git add *)
+    Commitar as alterações (git commit -m 'descrição')
+    Dar uma referência de pra onde você vai subir suas branches 
+
+		Ex: git remote add origin https://github.com/MrtheLoop/teste.git
+
+    Confira também as configurações do seu Git: git config --global --list
+    Se não possuir todas as configurações necessárias, adicione o e-mail e username
+    Lembre-se também de verificar se está logado no git para subir suas branches

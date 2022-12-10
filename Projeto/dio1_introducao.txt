@@ -1,0 +1,28 @@
+
+
+Desafio do Projeto
+Reforce seu conhecimento em Git com um desafio
+totalmente pratico, onde voce oxecutara todos
+as passos para a criacao, atualizacao e 
+sincronizacao de um repositorio no Github
+
+danw conhecimentos basicos ne
+
+
+Com isso, voce podera compartilhar suas 
+anotacoes e exercicios em seu proprio 
+repositorio. Criando assim, o primeiro 
+(de muitos) pojetos do seu portifolio
+
+
+
+REQUISITOS
+ ver a aula da dio
+esta tudo instalado e configurado
+aff engajmento e vontade de aprender
+
+
+
+
+
+

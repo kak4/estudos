@@ -1,0 +1,94 @@
+RESOLVENDO CONFLITOS 
+
+nesse momento 
+-voce tem um codigo no seu github e 
+ baixa para o seu pc 
+o que voce acabou de baixar tem o mesmo
+codigo do github
+MESMA VERSÃO DE ARQUIVO
+
+- uma outra pessoa pega seu arquivo no 
+ github (git clone) e instala no pc dele
+
+nesse momento voce e o outro cara tem o 
+MESMO arquivo que esta no github
+
+- eu e a outra pessoa começam a
+  editar nesse mesmo arquivo essa 
+  outra pessoa empurrou o arquivo 
+  editado para o github
+  
+agora o codigo que esta no github é o 
+codigo dele 
+
+esse arquivo que ele colocou agora é o 
+mais atualizado
+
+e voce ainda esta editando
+
+AGORA  seu codigo é diferente do que 
+esta no github
+
+quando voce manda o seu vai dar erro...
+
+vai pedir o seguinte
+  git: antes de voce empurra para o
+  github,voce precisa puchar a versão 
+  mais atualizada que esta na web e junta
+  o que voce fez com o novo arquivo
+  
+ai vai ser  ornar mais atualizado
+  
+ ai precisar vafer essa JUNÇAO 
+NA MAO
+  
+  
+  
+GIT PULL = puxar o arquivo mais atualizado
+  
+ git pull origin master
+  codigo   nome
+          
+qunado ele baixa ele tenta junta os dois arquivos
+normalmente quando da erro voce precisa
+ir lá e editar o arquivo novo com suas mudanças
+nome desse erro = merge conflict
+
+ 
+           
+GIT CLONE = baixar um repositorio
+  
+git clone link_do_rrquivo_html         
+ 
+           
+ 
+  
+  EX:
+
+
+  
+  
+  
+  
+  
+  
+ 
+  
+
+
+
+
+
+ 
+ 
+
+
+ 
+
+
+
+
+
+
+
+

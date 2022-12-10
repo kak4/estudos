@@ -1,0 +1,104 @@
+trabalhando com Github 
+
+
+
+
+se não tiver uma conta....crie uma
+
+CODIGO
+ git config --list
+para verificar se sua conta estar logada com o github 
+do pc ou se é uma conta diferente 
+
+
+
+e se estiver errada...
+CODIGO
+ git config --global --unset oqVcQuerMudar
+
+ex
+gmail errada
+CODIGO
+
+ git config --global --unset user.email
+saiu o gmail
+
+colocar novo gmail
+CODIGO
+
+ git config --global user.email "NomeDoEmail"
+
+
+
+
+
+criar um repositorio 
+
+> your repositories 
+     >new
+          > adicionar as coisas
+
+
+README file - são arquivos que contam a 
+historia do arquivo
+          
+depois de fazer o repositorio no github
+Ir para o gitbash
+
+
+
+
+
+vamos apontar, empurrar o repossitorio do cloud para
+o pc 
+
+entrar na pasta que vai ser enpurrada para o Github pelo terminal
+
+
+
+adiconar a origem (dar um nome ao link)
+CODIGO
+git remote add origin LInkDoGithub
+
+se não trousse nem um erro 
+esta TUDO CERTO
+
+vai mostrar as listas de repositorios remotos
+CODIGO
+git remote -v
+
+name  https://ksksksksksksksksksksksksk.git(fetch)
+name  https://kskskkskskskskskskksksksk.git (push)
+
+o nome que voce coloca quando coloca o 1° codigo
+ex; origin
+git remote add origin LInkDoGithub
+origin = name do link do repositorio cloud
+pode ser qualquer nome 
+
+
+
+
+CODIGO
+git status
+pra ver se tem algum problema,pendencio
+
+
+
+
+comando que empurra o repositorio do pc para o cloud
+CODIGO 
+git push origin master
+
+
+vai pedir suas credenciais(logar -senha- , -gmail-)
+
+12:00
+
+acabo
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+GitHub e git
+
+Aula10
+
+
+Porque isso é importante??
+Pra que aprender?
+
+Git
+Foi criado pelo Linus Torvalds 
+
+*Software NN é feito sozinho
+EQUIPE
+
+ele criou o Git para organiza seus códigos e possibilita que outros te ajudem nos seus projetos
+
+Linus Torvalds precisou de ajuda para criar o Linux
+
+Git diferente de GitHub
+Um complementa o outro
+Mas é DIFERENTE
+
+GitHub - Repositorio online
+\> tem serviços pagos
+    \>mas tem outros
+
+
+Outras coisas que estaremos aprendendo 
+-controle de versão
+-Armazenamento em nuvem 
+-trabalho de equipe
+-Melhorar seu codigo
+-Reconhecimento

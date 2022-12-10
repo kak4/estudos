@@ -1,0 +1,112 @@
+Chaves SSH e Tokens
+
+   \>    + segurença 
+
+se coloca um codigo no git 
+nn se usa mais a senha e gmail 
+para empurrar arquivos 
+
+
+
+Chave SSH
+
+
+é uma forma de estabelecer uma conexão segura e 
+encriptada entre 2 maquinas (servido do git e seu pc)
+e vamos configurar nosso pc como uma maquina 
+confiavel e estabelecer essa conexão
+
+sempre vai ter 2 chaves 
+uma publica e outra privada 
+
+quando colocarmos essa chave vc vai conseguir
+manda e fazer oq vc quer no github
+quando for enviar codigos para nosso pc pelo 
+SSH o git ja vai reconhece-la
+
+enviar codigos sem precisar colocar senha
+
+
+Como se gera a chave SSH 
+
+para linux e windons são só um POUCO diferente 
+o mac no final é diferente tbm
+
+use o Git Bash
+
+Comandos
+ssh-keygen -t ed25519 -C seu_email 
+ed25519 = tipo de citografia da chave
+...vai mostrar que vai gerar o par de chaves 
+e 
+o local onde elas estaram
+-enter
+
+-enter
+...vai pedir sua senha
+-enter
+
+nomedachave.pub  *é a chave publica 
+a outra é a privada 
+
+fingerprint  *mais ou menos a identidade da sua chave
+tipo de criptografia
+o nome da criptografia 
+
+
+vamos ver agora os arquivos 
+cd & ls 
+cat nome_da_chave_toda   *Sé para ver o arquivo
+-> pegar a chave SSH  *chave publica e colocar na 
+
+pagina do git
+
+
+
+AGORA VAI TER A CONEXÃO DO SEU PC E O GIT
+
+mas é só isso??
+ainda nn
+mais um processo
+
+
+VOLTAMOS PRO TERMINAL
+ls & pwd    -> ver o local onde estamos
+
+Inicializar o SSH AGENT
+
+eval $(ssh-agent -s)
+agent pid X
+
+X = uns numeros qualquer
+X = numero do processo 
+
+ssh-add chave_privada 
+  \> se eu já nn estivesse dentro da pasta precisaria 
+      colocar o caminho da chave 
+colocar a senha ....
+
+.....
+
+.....
+
+
+linux e windowns é praticamente a mesma coisa
+
+
+
+TOKEN de Acesso Pessoal
+
+em vez da senha se usa o Token
+ainda precisa digitar seu nickname
+
+
+ENTRA NO GIT
+  
+entrar em developer settings
+entrar em Personalalcess tokens
+...
+depois de copiar coloque em um lugar seguro no PC
+SALVE O TOKEN
+
+
