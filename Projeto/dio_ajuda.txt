@@ -37,4 +37,10 @@ Se você possui as pastas no seu computador, não se esqueça de:
     consegui fazer essa parte mais a senha parece estar errada
     
     PRECISA MUDAR A SENHA 
+    git config --global
+    
+    SENHA NÃO FINCIONA
+    ...
+    precisa colocar o SSH 
+    VER A AULA 03.2
     

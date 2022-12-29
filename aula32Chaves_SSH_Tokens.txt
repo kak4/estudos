@@ -27,70 +27,135 @@ SSH o git ja vai reconhece-la
 enviar codigos sem precisar colocar senha
 
 
-Como se gera a chave SSH 
+PROCESSOS
+
+- Entra  no GitHub
+    
+    -configuraçoes
+        
+        - SSH key
+         -nova chave SSH
+         
+         
+         
+SSH precisa para adicionar a chave no  github
+ele pede um Title e Key
+
+mas precisamos gerar a chave(KEY)
+
+FAZER NO CLE (terminal)
+
+     
+
 
 para linux e windons são só um POUCO diferente 
 o mac no final é diferente tbm
 
 use o Git Bash
 
+
+
 Comandos
 ssh-keygen -t ed25519 -C seu_email 
 ed25519 = tipo de citografia da chave
 ...vai mostrar que vai gerar o par de chaves 
 e 
-o local onde elas estaram
+0o local onde elas estaram
 -enter
+
 
 -enter
 ...vai pedir sua senha
 -enter
 
+
 nomedachave.pub  *é a chave publica 
 a outra é a privada 
+
 
 fingerprint  *mais ou menos a identidade da sua chave
 tipo de criptografia
 o nome da criptografia 
 
 
+
+
 vamos ver agora os arquivos 
 cd & ls 
 cat nome_da_chave_toda   *Sé para ver o arquivo
--> pegar a chave SSH  *chave publica e colocar na 
 
-pagina do git
+-> pegar a chave SSH publica   
+abrir a chave da publica 
+e
+copiar e colocar no GitHub
+
+id_
+
+
+pagina do GitHub(o site)
+
+
+dar o titulo  - sua maquina-
+
+colocar a chave(Key) public que vc copiou 
+
+
+crie 
+- pedir sua senha 
 
 
 
-AGORA VAI TER A CONEXÃO DO SEU PC E O GIT
+AGOTS PODE USAR ??
 
-mas é só isso??
-ainda nn
-mais um processo
+--NÃO--
 
 
 VOLTAMOS PRO TERMINAL
+
+
 ls & pwd    -> ver o local onde estamos
 
-Inicializar o SSH AGENT
+vamos inicializar o SSH AGENT
 
 eval $(ssh-agent -s)
+-enter 
 agent pid X
 
 X = uns numeros qualquer
 X = numero do processo 
 
-ssh-add chave_privada 
+
+ssh-add chave_PRIVADA 
+-enter
+
   \> se eu já nn estivesse dentro da pasta precisaria 
       colocar o caminho da chave 
-colocar a senha ....
+      
+      
+colocar a senha da sua chave(passphrase)
+....
+
+
+
+VAMOS CLONAR UM REPOSITORIO 
+
+> vamos testar o SSH 
+
+
+dar um 
+
+git clone caminho_da_SSH
+
+->caminho_da_SSH =  
+   ->= link que pegamos no GitHub  no SSH 
+
+
+- yes
 
 .....
 
-.....
 
-
+15:27
 linux e windowns é praticamente a mesma coisa
 
 
